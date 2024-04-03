@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css')}}">
+		
+		<title>{{title}} Weather</title>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Get Weather</h1>
+			<form action="/weather">
+				<input type="text" name="city" id="city" placeholder="Enter a city">
+				<button id="searchButton">Search</button>
+			</form>
+		</div>
+
+	</body>
+</html>
